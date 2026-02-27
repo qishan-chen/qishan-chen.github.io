@@ -43,9 +43,9 @@ export default function Home() {
           <FadeIn delay={0.1}>
             <div>
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-3">Qishan Chen</h1>
-              <p className="text-xl text-[var(--text-secondary)] mb-2">Sun Yat-Sen University · Undergraduate</p>
+              <p className="text-xl text-[var(--text-secondary)] mb-2">Sun Yat-Sen University · Sophomore</p>
               <p className="text-lg text-[var(--text-secondary)] max-w-lg leading-relaxed">
-                An undergraduate passionate about Computer Science and Artificial Intelligence, focusing on Machine Learning and Natural Language Processing.
+                An undergraduate passionate about Mathematics and Theoretical Computer Science, focusing on Graph Theory, Algorithm Design and Complexity Analysis.
               </p>
               <div className="flex gap-4 mt-6">
                 <a href="#contact" className="px-5 py-2.5 bg-[var(--accent)] text-white rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
@@ -73,7 +73,7 @@ export default function Home() {
                 <h3 className="text-lg font-semibold mb-4">Education</h3>
                 <div className="p-5 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
                   <p className="font-medium">Sun Yat-Sen University</p>
-                  <p className="text-sm text-[var(--text-secondary)] mt-1">B.S. in Computer Science</p>
+                  <p className="text-sm text-[var(--text-secondary)] mt-1">B.S. in Mathematics / Computer Science</p>
                   <p className="text-sm text-[var(--text-secondary)] mt-1">2022 - 2026 (Expected)</p>
                 </div>
               </div>
@@ -82,14 +82,14 @@ export default function Home() {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Research Interests</h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Machine Learning", "Natural Language Processing", "Computer Vision", "Deep Learning", "Data Mining"].map((tag) => (
+                  {["Graph Theory", "Algorithm Design", "Complexity Analysis", "Combinatorics", "Discrete Mathematics"].map((tag) => (
                     <span key={tag} className="px-3 py-1.5 text-sm rounded-full bg-[var(--accent-light)] text-[var(--accent)] font-medium">
                       {tag}
                     </span>
                   ))}
                 </div>
                 <p className="text-[var(--text-secondary)] mt-4 leading-relaxed">
-                  Currently exploring the applications and optimization of Large Language Models, with a strong interest in applying AI to real-world scenarios.
+                  Currently exploring structural graph theory and algorithmic complexity, with a keen interest in bridging pure mathematics and theoretical computer science.
                 </p>
               </div>
             </FadeIn>
