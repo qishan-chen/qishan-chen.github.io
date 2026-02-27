@@ -2,24 +2,6 @@
 
 import { FadeIn } from "@/components/FadeIn";
 
-const projects = [
-  {
-    title: "Deep Learning Image Classification System",
-    desc: "An image classification model built with PyTorch, achieving 95% accuracy on the CIFAR-10 dataset.",
-    tags: ["Python", "PyTorch", "Deep Learning"],
-  },
-  {
-    title: "Campus Information Management Platform",
-    desc: "A full-stack web application providing course management and grade inquiry features for students.",
-    tags: ["React", "Node.js", "MySQL"],
-  },
-  {
-    title: "NLP Text Summarization Tool",
-    desc: "An automatic text summarization tool based on the Transformer architecture.",
-    tags: ["NLP", "Transformers", "Python"],
-  },
-];
-
 const publications = [
   {
     title: "No publications yet",
@@ -112,33 +94,6 @@ export default function Home() {
               </div>
             </FadeIn>
           ))}
-        </div>
-      </section>
-
-      {/* Projects */}
-      <section id="projects" className="py-20 px-6 bg-[var(--bg-secondary)]">
-        <div className="max-w-5xl mx-auto">
-          <FadeIn>
-            <h2 className="text-2xl font-bold mb-2">Projects</h2>
-            <div className="w-12 h-1 bg-[var(--accent)] rounded mb-8" />
-          </FadeIn>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((proj, i) => (
-              <FadeIn key={i} delay={0.1 * i}>
-                <div className="p-6 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm hover:shadow-md transition-shadow h-full">
-                  <h3 className="font-semibold mb-2">{proj.title}</h3>
-                  <p className="text-sm text-[var(--text-secondary)] mb-4 leading-relaxed">{proj.desc}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {proj.tags.map((tag) => (
-                      <span key={tag} className="px-2 py-1 text-xs rounded bg-[var(--bg-secondary)] text-[var(--text-secondary)]">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
         </div>
       </section>
 
