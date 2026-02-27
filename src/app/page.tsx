@@ -43,10 +43,7 @@ export default function Home() {
           <FadeIn delay={0.1}>
             <div>
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-3">Qishan Chen</h1>
-              <p className="text-xl text-[var(--text-secondary)] mb-2 flex items-center gap-2">
-                <img src="/sysu-logo.png" alt="SYSU" className="w-6 h-6 inline-block" />
-                Sun Yat-Sen University · Undergraduate
-              </p>
+              <p className="text-xl text-[var(--text-secondary)] mb-2">Sun Yat-Sen University · Undergraduate</p>
               <p className="text-lg text-[var(--text-secondary)] max-w-lg leading-relaxed">
                 An undergraduate passionate about Computer Science and Artificial Intelligence, focusing on Machine Learning and Natural Language Processing.
               </p>
@@ -75,10 +72,7 @@ export default function Home() {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Education</h3>
                 <div className="p-5 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
-                  <p className="font-medium flex items-center gap-2">
-                    <img src="/sysu-logo.png" alt="SYSU" className="w-5 h-5 inline-block" />
-                    Sun Yat-Sen University
-                  </p>
+                  <p className="font-medium">Sun Yat-Sen University</p>
                   <p className="text-sm text-[var(--text-secondary)] mt-1">B.S. in Computer Science</p>
                   <p className="text-sm text-[var(--text-secondary)] mt-1">2022 - 2026 (Expected)</p>
                 </div>
