@@ -97,6 +97,21 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Projects */}
+      <section id="projects" className="py-20 px-6 bg-[var(--bg-secondary)]">
+        <div className="max-w-5xl mx-auto">
+          <FadeIn>
+            <h2 className="text-2xl font-bold mb-2">Projects</h2>
+            <div className="w-12 h-1 bg-[var(--accent)] rounded mb-8" />
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <div className="p-5 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
+              <p className="text-[var(--text-secondary)]">Coming soon.</p>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* CV */}
       <section id="cv" className="py-20 px-6">
         <div className="max-w-5xl mx-auto text-center">
