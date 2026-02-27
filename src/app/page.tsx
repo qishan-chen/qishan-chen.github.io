@@ -73,8 +73,8 @@ export default function Home() {
                 <h3 className="text-lg font-semibold mb-4">Education</h3>
                 <div className="p-5 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
                   <p className="font-medium">Sun Yat-Sen University</p>
-                  <p className="text-sm text-[var(--text-secondary)] mt-1">B.S. in Mathematics / Computer Science</p>
-                  <p className="text-sm text-[var(--text-secondary)] mt-1">2022 - 2026 (Expected)</p>
+                  <p className="text-sm text-[var(--text-secondary)] mt-1">B.S. in Mathematics</p>
+                  <p className="text-sm text-[var(--text-secondary)] mt-1">2024 - 2028 (Expected)</p>
                 </div>
               </div>
             </FadeIn>
