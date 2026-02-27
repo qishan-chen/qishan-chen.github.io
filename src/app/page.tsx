@@ -82,14 +82,14 @@ export default function Home() {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Research Interests</h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Graph Theory", "Algorithm Design", "Complexity Analysis", "Combinatorics", "Discrete Mathematics"].map((tag) => (
+                  {["Graph Theory", "Algorithm Design", "Complexity Analysis", "Sketching Algorithms", "Discrepancy Theory"].map((tag) => (
                     <span key={tag} className="px-3 py-1.5 text-sm rounded-full bg-[var(--accent-light)] text-[var(--accent)] font-medium">
                       {tag}
                     </span>
                   ))}
                 </div>
                 <p className="text-[var(--text-secondary)] mt-4 leading-relaxed">
-                  Currently exploring structural graph theory and algorithmic complexity, with a keen interest in bridging pure mathematics and theoretical computer science.
+                  Currently exploring sketching algorithms and discrepancy theory, investigating how randomized data structures and combinatorial balancing techniques can yield efficient solutions to fundamental computational problems.
                 </p>
               </div>
             </FadeIn>
