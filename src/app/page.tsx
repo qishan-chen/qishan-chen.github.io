@@ -121,8 +121,8 @@ export default function Home() {
           </FadeIn>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <FadeIn delay={0.1}>
-              <div className="p-6 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
+            <FadeIn delay={0.1} className="h-full">
+              <div className="h-full p-6 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm flex flex-col">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h3 className="text-lg font-semibold">Notes</h3>
@@ -134,11 +134,15 @@ export default function Home() {
                     Coming soon
                   </span>
                 </div>
+                <p className="mt-4 text-[var(--text-secondary)] leading-relaxed">
+                  I’ll gradually upload cleaned notes and handouts here.
+                </p>
+                <div className="flex-1" />
               </div>
             </FadeIn>
 
-            <FadeIn delay={0.2}>
-              <div className="p-6 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
+            <FadeIn delay={0.2} className="h-full">
+              <div className="h-full p-6 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm flex flex-col">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h3 className="text-lg font-semibold">Talks</h3>
@@ -153,6 +157,7 @@ export default function Home() {
                 <p className="mt-4 text-[var(--text-secondary)] leading-relaxed">
                   I’ll publish selected lecture notes, slides, and video links here as they become available.
                 </p>
+                <div className="flex-1" />
               </div>
             </FadeIn>
           </div>
