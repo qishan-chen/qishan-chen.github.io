@@ -134,16 +134,6 @@ export default function Home() {
                     Coming soon
                   </span>
                 </div>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {["Graph Theory", "Algorithms", "Complexity", "Discrete Math"].map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1.5 text-sm rounded-full bg-[var(--accent-light)] text-[var(--accent)] font-medium"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
               </div>
             </FadeIn>
 
