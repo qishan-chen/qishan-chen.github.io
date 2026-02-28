@@ -127,7 +127,7 @@ export default function Home() {
                   <div>
                     <h3 className="text-lg font-semibold">Notes</h3>
                     <p className="text-sm text-[var(--text-secondary)] mt-1">
-                      A growing collection of my study notes in math and theoretical CS.
+                      A growing collection of my study notes in mathematics and theoretical computer science.
                     </p>
                   </div>
                   <span className="shrink-0 px-2.5 py-1 text-xs rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] text-[var(--text-secondary)]">
