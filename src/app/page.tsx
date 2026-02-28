@@ -112,6 +112,63 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Notes & Talks */}
+      <section id="notes-talks" className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <FadeIn>
+            <h2 className="text-2xl font-bold mb-2">Notes &amp; Talks</h2>
+            <div className="w-12 h-1 bg-[var(--accent)] rounded mb-8" />
+          </FadeIn>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <FadeIn delay={0.1}>
+              <div className="p-6 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-lg font-semibold">Notes</h3>
+                    <p className="text-sm text-[var(--text-secondary)] mt-1">
+                      A growing collection of my study notes in math and theoretical CS.
+                    </p>
+                  </div>
+                  <span className="shrink-0 px-2.5 py-1 text-xs rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] text-[var(--text-secondary)]">
+                    Coming soon
+                  </span>
+                </div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {["Graph Theory", "Algorithms", "Complexity", "Discrete Math"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-3 py-1.5 text-sm rounded-full bg-[var(--accent-light)] text-[var(--accent)] font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.2}>
+              <div className="p-6 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-lg font-semibold">Talks</h3>
+                    <p className="text-sm text-[var(--text-secondary)] mt-1">
+                      Slides and recordings of talks, seminars, and course presentations.
+                    </p>
+                  </div>
+                  <span className="shrink-0 px-2.5 py-1 text-xs rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] text-[var(--text-secondary)]">
+                    Coming soon
+                  </span>
+                </div>
+                <p className="mt-4 text-[var(--text-secondary)] leading-relaxed">
+                  I’ll publish selected lecture notes, slides, and video links here as they become available.
+                </p>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
       {/* CV */}
       <section id="cv" className="py-20 px-6">
         <div className="max-w-5xl mx-auto text-center">
