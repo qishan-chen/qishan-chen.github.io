@@ -11,6 +11,15 @@ const publications = [
   },
 ];
 
+const notes = [
+  {
+    title: "Abstract Algebra Notes",
+    desc: "A complete set of cleaned notes covering groups, group actions, rings, factorization, and field extensions.",
+    meta: "PDF · 52 pages",
+    href: "/notes/abstract-algebra-notes.pdf",
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -131,12 +140,27 @@ export default function Home() {
                     </p>
                   </div>
                   <span className="shrink-0 px-2.5 py-1 text-xs rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] text-[var(--text-secondary)]">
-                    Coming soon
+                    New
                   </span>
                 </div>
-                <p className="mt-4 text-[var(--text-secondary)] leading-relaxed">
-                  I’ll gradually upload cleaned notes and handouts here.
-                </p>
+                <div className="mt-5 space-y-4">
+                  {notes.map((note) => (
+                    <a
+                      key={note.href}
+                      href={note.href}
+                      target="_blank"
+                      className="block rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] p-4 transition-colors hover:border-[var(--accent)]"
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <p className="font-medium">{note.title}</p>
+                          <p className="mt-1 text-sm text-[var(--text-secondary)] leading-relaxed">{note.desc}</p>
+                        </div>
+                        <span className="shrink-0 text-xs font-medium text-[var(--accent)]">{note.meta}</span>
+                      </div>
+                    </a>
+                  ))}
+                </div>
                 <div className="flex-1" />
               </div>
             </FadeIn>
