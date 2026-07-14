@@ -152,6 +152,11 @@ export default function Home() {
                             <p className="font-medium">{note.title}</p>
                           </div>
                           <p className="mt-1 text-sm text-[var(--text-secondary)] leading-relaxed">{note.desc}</p>
+                          {note.status === "draft" && (
+                            <p className="mt-1.5 text-xs font-medium text-[var(--accent)]">
+                              This note is being actively updated
+                            </p>
+                          )}
                         </div>
                         <span className="shrink-0 text-xs font-medium text-[var(--accent)]">{note.meta}</span>
                       </div>

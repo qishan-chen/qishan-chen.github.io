@@ -11,6 +11,16 @@ export type Note = {
 
 export const notes: Note[] = [
   {
+    slug: "sketching-algorithms",
+    title: "Sketching Algorithms Notes",
+    desc: "Notes based on the Sketching Algorithms lecture notes by Jelani Nelson, Fall 2020.",
+    tags: ["Sketching", "Randomized Numerical Linear Algebra"],
+    meta: "PDF · 21 pages",
+    date: "2025",
+    pdf: "/notes/sketching-algorithms-notes.pdf",
+    status: "draft",
+  },
+  {
     slug: "abstract-algebra",
     title: "Abstract Algebra Notes",
     desc: "Notes from the undergraduate Abstract Algebra course at Sun Yat-sen University, based on the textbook published by USTC Press, covering groups, rings, and fields.",

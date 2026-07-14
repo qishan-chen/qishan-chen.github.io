@@ -34,6 +34,11 @@ export default function NotesIndex() {
                 <div className="flex items-start justify-between gap-4">
                   <h2 className="text-lg font-semibold group-hover:text-[var(--accent)] transition-colors">
                     {note.title}
+                    {note.status === "draft" && (
+                      <span className="ml-2 align-middle px-2 py-0.5 text-xs rounded-full bg-[var(--accent-light)] text-[var(--accent)] font-medium">
+                        Updating
+                      </span>
+                    )}
                   </h2>
                   <span className="shrink-0 text-xs font-medium text-[var(--accent)]">{note.meta}</span>
                 </div>
