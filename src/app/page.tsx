@@ -130,7 +130,12 @@ export default function Home() {
                   className="flex h-full flex-col rounded-xl border border-[var(--border)] bg-[var(--card)] p-5 shadow-sm transition-colors hover:border-[var(--accent)]"
                 >
                   <div className="flex items-start justify-between gap-3">
-                    <h3 className="font-semibold">{note.title}</h3>
+                    <div className="flex items-center gap-2">
+                      <span className="shrink-0 rounded-full bg-[var(--accent-light)] px-2 py-0.5 text-xs font-semibold text-[var(--accent)]">
+                        Latest
+                      </span>
+                      <h3 className="font-semibold">{note.title}</h3>
+                    </div>
                     <span className="shrink-0 text-xs font-medium text-[var(--accent)]">{note.meta}</span>
                   </div>
                   <p className="mt-2 text-sm text-[var(--text-secondary)] leading-relaxed">{note.desc}</p>
