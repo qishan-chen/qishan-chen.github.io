@@ -1,16 +1,17 @@
 "use client";
 
+import Link from "next/link";
 import { useTheme } from "./ThemeProvider";
 import { useState } from "react";
 
 const navItems = [
-  { label: "Home", href: "#hero" },
-  { label: "About", href: "#about" },
-  { label: "Publications", href: "#publications" },
-  { label: "Projects", href: "#projects" },
-  { label: "Notes & Talks", href: "#notes-talks" },
-  { label: "CV", href: "#cv" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#hero" },
+  { label: "About", href: "/#about" },
+  { label: "Publications", href: "/#publications" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Notes & Talks", href: "/#notes-talks" },
+  { label: "CV", href: "/#cv" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -20,20 +21,20 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-[var(--bg)]/80 border-b border-[var(--border)] transition-all">
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#hero" className="text-lg font-semibold tracking-tight">
+        <Link href="/#hero" className="text-lg font-semibold tracking-tight">
           Qishan Chen
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className="text-sm text-[var(--text-secondary)] hover:text-[var(--text)] transition-colors"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
           <button
             onClick={toggleTheme}
@@ -66,14 +67,14 @@ export default function Navbar() {
         <div className="md:hidden border-t border-[var(--border)] bg-[var(--bg)]/95 backdrop-blur-md">
           <div className="px-6 py-4 flex flex-col gap-4">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
                 className="text-sm text-[var(--text-secondary)] hover:text-[var(--text)] transition-colors"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

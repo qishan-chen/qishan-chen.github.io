@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
+import { notes } from "@/data/notes";
 
 const publications = [
   {
@@ -8,15 +10,6 @@ const publications = [
     desc: "Actively participating in research projects. Stay tuned!",
     venue: "",
     year: "",
-  },
-];
-
-const notes = [
-  {
-    title: "Abstract Algebra Notes",
-    desc: "A complete set of cleaned notes covering groups, group actions, rings, factorization, and field extensions.",
-    meta: "PDF · 52 pages",
-    href: "/notes/abstract-algebra-notes.pdf",
   },
 ];
 
@@ -144,24 +137,35 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="mt-5 space-y-4">
-                  {notes.map((note) => (
-                    <a
-                      key={note.href}
-                      href={note.href}
-                      target="_blank"
+                  {notes.slice(0, 1).map((note) => (
+                    <Link
+                      key={note.slug}
+                      href={`/notes/${note.slug}`}
                       className="block rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] p-4 transition-colors hover:border-[var(--accent)]"
                     >
                       <div className="flex items-start justify-between gap-4">
                         <div>
-                          <p className="font-medium">{note.title}</p>
+                          <div className="flex items-center gap-2">
+                            <span className="px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide rounded-full bg-[var(--accent-light)] text-[var(--accent)]">
+                              Latest
+                            </span>
+                            <p className="font-medium">{note.title}</p>
+                          </div>
                           <p className="mt-1 text-sm text-[var(--text-secondary)] leading-relaxed">{note.desc}</p>
                         </div>
                         <span className="shrink-0 text-xs font-medium text-[var(--accent)]">{note.meta}</span>
                       </div>
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 <div className="flex-1" />
+                <Link
+                  href="/notes"
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] hover:gap-2.5 transition-all"
+                >
+                  Browse all notes
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                </Link>
               </div>
             </FadeIn>
 
