@@ -114,86 +114,92 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Notes & Talks */}
-      <section id="notes-talks" className="py-20 px-6">
+      {/* Notes */}
+      <section id="notes" className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
-            <h2 className="text-2xl font-bold mb-2">Notes &amp; Talks</h2>
+            <h2 className="text-2xl font-bold mb-2">Notes</h2>
             <div className="w-12 h-1 bg-[var(--accent)] rounded mb-8" />
           </FadeIn>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <FadeIn delay={0.1} className="h-full">
-              <div className="h-full p-6 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm flex flex-col">
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h3 className="text-lg font-semibold">Notes</h3>
-                    <p className="text-sm text-[var(--text-secondary)] mt-1">
-                      A growing collection of my study notes in mathematics and theoretical computer science.
-                    </p>
-                  </div>
-                  <span className="shrink-0 px-2.5 py-1 text-xs rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] text-[var(--text-secondary)]">
-                    New
-                  </span>
+          <FadeIn delay={0.1}>
+            <div className="p-6 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm flex flex-col">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-lg font-semibold">Study Notes</h3>
+                  <p className="text-sm text-[var(--text-secondary)] mt-1">
+                    A growing collection of my study notes in mathematics and theoretical computer science.
+                  </p>
                 </div>
-                <div className="mt-5 space-y-4">
-                  {notes.slice(0, 1).map((note) => (
-                    <Link
-                      key={note.slug}
-                      href={`/notes/${note.slug}`}
-                      className="block rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] p-4 transition-colors hover:border-[var(--accent)]"
-                    >
-                      <div className="flex items-start justify-between gap-4">
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <span className="px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide rounded-full bg-[var(--accent-light)] text-[var(--accent)]">
-                              Latest
-                            </span>
-                            <p className="font-medium">{note.title}</p>
-                          </div>
-                          <p className="mt-1 text-sm text-[var(--text-secondary)] leading-relaxed">{note.desc}</p>
-                          {note.status === "draft" && (
-                            <p className="mt-1.5 text-xs font-medium text-[var(--accent)]">
-                              This note is being actively updated
-                            </p>
-                          )}
+                <span className="shrink-0 px-2.5 py-1 text-xs rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] text-[var(--text-secondary)]">
+                  New
+                </span>
+              </div>
+              <div className="mt-5 space-y-4">
+                {notes.slice(0, 1).map((note) => (
+                  <Link
+                    key={note.slug}
+                    href={`/notes/${note.slug}`}
+                    className="block rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] p-4 transition-colors hover:border-[var(--accent)]"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <span className="px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide rounded-full bg-[var(--accent-light)] text-[var(--accent)]">
+                            Latest
+                          </span>
+                          <p className="font-medium">{note.title}</p>
                         </div>
-                        <span className="shrink-0 text-xs font-medium text-[var(--accent)]">{note.meta}</span>
+                        <p className="mt-1 text-sm text-[var(--text-secondary)] leading-relaxed">{note.desc}</p>
+                        {note.status === "draft" && (
+                          <p className="mt-1.5 text-xs font-medium text-[var(--accent)]">
+                            This note is being actively updated
+                          </p>
+                        )}
                       </div>
-                    </Link>
-                  ))}
-                </div>
-                <div className="flex-1" />
-                <Link
-                  href="/notes"
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] hover:gap-2.5 transition-all"
-                >
-                  Browse all notes
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
-                </Link>
+                      <span className="shrink-0 text-xs font-medium text-[var(--accent)]">{note.meta}</span>
+                    </div>
+                  </Link>
+                ))}
               </div>
-            </FadeIn>
+              <Link
+                href="/notes"
+                className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] hover:gap-2.5 transition-all"
+              >
+                Browse all notes
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+              </Link>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
 
-            <FadeIn delay={0.2} className="h-full">
-              <div className="h-full p-6 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm flex flex-col">
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h3 className="text-lg font-semibold">Talks</h3>
-                    <p className="text-sm text-[var(--text-secondary)] mt-1">
-                      Slides and recordings of talks, seminars, and course presentations.
-                    </p>
-                  </div>
-                  <span className="shrink-0 px-2.5 py-1 text-xs rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] text-[var(--text-secondary)]">
-                    Coming soon
-                  </span>
+      {/* Talks */}
+      <section id="talks" className="py-20 px-6 bg-[var(--bg-secondary)]">
+        <div className="max-w-5xl mx-auto">
+          <FadeIn>
+            <h2 className="text-2xl font-bold mb-2">Talks</h2>
+            <div className="w-12 h-1 bg-[var(--accent)] rounded mb-8" />
+          </FadeIn>
+
+          <FadeIn delay={0.1}>
+            <div className="p-6 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm flex flex-col">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-lg font-semibold">Talks &amp; Presentations</h3>
+                  <p className="text-sm text-[var(--text-secondary)] mt-1">
+                    Slides and recordings of talks, seminars, and course presentations.
+                  </p>
                 </div>
-                <p className="mt-4 text-[var(--text-secondary)] leading-relaxed">
-                  I’ll publish selected lecture notes, slides, and video links here as they become available.
-                </p>
-                <div className="flex-1" />
+                <span className="shrink-0 px-2.5 py-1 text-xs rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] text-[var(--text-secondary)]">
+                  Coming soon
+                </span>
               </div>
-            </FadeIn>
-          </div>
+              <p className="mt-4 text-[var(--text-secondary)] leading-relaxed">
+                I’ll publish selected lecture notes, slides, and video links here as they become available.
+              </p>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -249,7 +255,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-[var(--border)]">
         <div className="max-w-5xl mx-auto text-center text-sm text-[var(--text-secondary)]">
-          © 2025 Qishan Chen. All rights reserved.
+          © 2026 Qishan Chen. All rights reserved.
         </div>
       </footer>
     </div>
