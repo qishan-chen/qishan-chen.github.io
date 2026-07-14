@@ -43,6 +43,11 @@ export default function NotesIndex() {
                   <span className="shrink-0 text-xs font-medium text-[var(--accent)]">{note.meta}</span>
                 </div>
                 <p className="mt-2 text-sm text-[var(--text-secondary)] leading-relaxed">{note.desc}</p>
+                {note.status === "draft" && (
+                  <p className="mt-1.5 text-xs font-medium text-[var(--accent)]">
+                    This note is being actively updated
+                  </p>
+                )}
                 <div className="mt-4 flex flex-wrap gap-2">
                   {note.tags.map((tag) => (
                     <span
