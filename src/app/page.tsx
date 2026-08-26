@@ -65,15 +65,8 @@ export default function Home() {
             <FadeIn delay={0.2}>
               <div>
                 <h3 className="text-lg font-semibold mb-4">Research Interests</h3>
-                <div className="flex flex-wrap gap-2">
-                  {["Graph Theory", "Algorithm Design", "Complexity Analysis", "Sketching Algorithms", "Discrepancy Theory"].map((tag) => (
-                    <span key={tag} className="px-3 py-1.5 text-sm rounded-full bg-[var(--accent-light)] text-[var(--accent)] font-medium">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <p className="text-[var(--text-secondary)] mt-4 leading-relaxed">
-                  Currently exploring sketching algorithms and discrepancy theory, investigating how randomized data structures and combinatorial balancing techniques can yield efficient solutions to fundamental computational problems.
+                <p className="text-[var(--text-secondary)] leading-relaxed">
+                  I am broadly interested in theoretical computer science, including complexity theory, streaming algorithms, graph algorithms, and areas that combine theoretical computer science with mathematical tools such as additive combinatorics. I am currently studying and researching meta-complexity, average-case complexity, proof complexity, and other complexity-theoretic areas closely connected to meta-complexity, with great enthusiasm. I am also working on problems in succinct data structures. Earlier, I studied and developed some familiarity with sketching algorithms and discrepancy theory. I am also eager to explore the intersection of theoretical computer science and AI, including AI for TCS. If you have any ideas or advice, please feel free to contact me. I would be very glad to hear your thoughts.
                 </p>
               </div>
             </FadeIn>
