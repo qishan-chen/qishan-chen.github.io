@@ -108,18 +108,13 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-2">News</h2>
             <div className="w-12 h-1 bg-[var(--accent)] rounded mb-8" />
           </FadeIn>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="space-y-4">
             {news.slice(0, 2).map((item, i) => (
               <FadeIn key={`${item.date}-${item.title}`} delay={0.1 + 0.1 * i}>
-                <Link
-                  href="/news"
-                  className="flex h-full flex-col rounded-xl border border-[var(--border)] bg-[var(--card)] p-5 shadow-sm transition-colors hover:border-[var(--accent)]"
-                >
-                  <div className="flex items-start justify-between gap-3">
-                    <h3 className="font-semibold">{item.title}</h3>
-                    <span className="shrink-0 text-xs font-medium text-[var(--accent)]">{item.date}</span>
-                  </div>
-                </Link>
+                <p className="leading-relaxed">
+                  <time className="font-medium text-[var(--text)]">{item.date}:</time>{" "}
+                  <span className="text-[var(--text-secondary)]">{item.title}</span>
+                </p>
               </FadeIn>
             ))}
           </div>
