@@ -72,7 +72,7 @@ export default function Home() {
                         href="https://liumingmou.github.io/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-medium text-[var(--accent)] underline underline-offset-2 hover:opacity-80 transition-opacity"
+                        className="text-[var(--link-muted)] underline underline-offset-2 hover:text-[var(--accent)] transition-colors"
                       >
                         Mingmou Liu
                       </a>
@@ -86,7 +86,16 @@ export default function Home() {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Research Interests</h3>
                 <p className="text-[var(--text-secondary)] leading-relaxed">
-                  I am broadly interested in theoretical computer science, including complexity theory, streaming algorithms, graph algorithms, and areas that combine theoretical computer science with mathematical tools such as additive combinatorics. I am currently studying and researching meta-complexity, average-case complexity, proof complexity, and other complexity-theoretic areas closely connected to meta-complexity, with great enthusiasm. I am also working on problems in succinct data structures. Earlier, I studied and developed some familiarity with sketching algorithms and discrepancy theory. I am also eager to explore the intersection of theoretical computer science and AI, including AI for TCS. If you have any ideas or advice, please feel free to contact me. I would be very glad to hear your thoughts.
+                  I am broadly interested in theoretical computer science, including complexity theory, streaming algorithms, graph algorithms, and areas that combine theoretical computer science with mathematical tools such as additive combinatorics. I am currently studying and researching meta-complexity, average-case complexity, proof complexity, and other complexity-theoretic areas closely connected to meta-complexity with great enthusiasm under the supervision of{" "}
+                  <a
+                    href="https://hanlin-ren.github.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--link-muted)] underline underline-offset-2 hover:text-[var(--accent)] transition-colors"
+                  >
+                    Hanlin Ren
+                  </a>
+                  . I am also working on problems in succinct data structures. Earlier, I studied and developed some familiarity with sketching algorithms and discrepancy theory. I am also eager to explore the intersection of theoretical computer science and AI, including AI for TCS. If you have any ideas or advice, please feel free to contact me. I would be very glad to hear your thoughts.
                 </p>
               </div>
             </FadeIn>
