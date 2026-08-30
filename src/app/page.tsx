@@ -108,9 +108,13 @@ export default function Home() {
             <div className="w-12 h-1 bg-[var(--accent)] rounded mb-8" />
           </FadeIn>
           <FadeIn delay={0.1}>
-            <div className="p-5 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
-              <p className="text-[var(--text-secondary)]">No news yet.</p>
-            </div>
+            <Link
+              href="/news"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] hover:gap-2.5 transition-all"
+            >
+              View all news
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+            </Link>
           </FadeIn>
         </div>
       </section>
