@@ -100,6 +100,21 @@ export default function Home() {
         </div>
       </section>
 
+      {/* News */}
+      <section id="news" className="py-20 px-6 bg-[var(--bg-secondary)]">
+        <div className="max-w-5xl mx-auto">
+          <FadeIn>
+            <h2 className="text-2xl font-bold mb-2">News</h2>
+            <div className="w-12 h-1 bg-[var(--accent)] rounded mb-8" />
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <div className="p-5 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
+              <p className="text-[var(--text-secondary)]">No news yet.</p>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* Publications */}
       <section id="publications" className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
