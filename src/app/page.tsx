@@ -101,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* News */}
-      <section id="news" className="py-20 px-6 bg-[var(--bg-secondary)]">
+      <section id="news" className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
             <h2 className="text-2xl font-bold mb-2">News</h2>
@@ -120,7 +120,7 @@ export default function Home() {
       </section>
 
       {/* Publications */}
-      <section id="publications" className="py-20 px-6">
+      <section id="publications" className="py-20 px-6 bg-[var(--bg-secondary)]">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
             <h2 className="text-2xl font-bold mb-2">Publications</h2>
