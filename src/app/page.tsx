@@ -66,7 +66,17 @@ export default function Home() {
                   <h3 className="text-lg font-semibold mb-4">Research Internship</h3>
                   <div className="p-5 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
                     <p className="font-medium">Nanjing University</p>
-                    <p className="text-sm text-[var(--text-secondary)] mt-1">Supervisor: Mingmou Liu</p>
+                    <p className="text-sm text-[var(--text-secondary)] mt-1">
+                      Supervisor: {" "}
+                      <a
+                        href="https://liumingmou.github.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline underline-offset-2 hover:text-[var(--accent)] transition-colors"
+                      >
+                        Mingmou Liu
+                      </a>
+                    </p>
                     <p className="text-sm text-[var(--text-secondary)] mt-1">2026.1 - Present</p>
                   </div>
                 </div>
