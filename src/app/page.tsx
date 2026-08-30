@@ -53,12 +53,22 @@ export default function Home() {
           </FadeIn>
           <div className="grid md:grid-cols-2 gap-12">
             <FadeIn delay={0.1}>
-              <div>
-                <h3 className="text-lg font-semibold mb-4">Education</h3>
-                <div className="p-5 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
-                  <p className="font-medium">Sun Yat-Sen University</p>
-                  <p className="text-sm text-[var(--text-secondary)] mt-1">B.S. in Mathematics</p>
-                  <p className="text-sm text-[var(--text-secondary)] mt-1">2024 - 2028 (Expected)</p>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-lg font-semibold mb-4">Education</h3>
+                  <div className="p-5 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
+                    <p className="font-medium">Sun Yat-Sen University</p>
+                    <p className="text-sm text-[var(--text-secondary)] mt-1">B.S. in Mathematics</p>
+                    <p className="text-sm text-[var(--text-secondary)] mt-1">2024 - 2028 (Expected)</p>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-4">Research Internship</h3>
+                  <div className="p-5 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
+                    <p className="font-medium">Nanjing University</p>
+                    <p className="text-sm text-[var(--text-secondary)] mt-1">Supervisor: Mingmou Liu</p>
+                    <p className="text-sm text-[var(--text-secondary)] mt-1">2026.1 - Present</p>
+                  </div>
                 </div>
               </div>
             </FadeIn>
