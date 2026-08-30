@@ -17,7 +17,7 @@ export const notes: Note[] = [
     tags: ["Meta-Complexity", "Complexity Theory"],
     meta: "PDF · 13 pages",
     date: "2026",
-    pdf: "/notes/meta-complexity-notes.pdf",
+    pdf: "/notes/meta-complexity-notes.pdf?v=4ea8c57",
     status: "complete",
   },
   {
