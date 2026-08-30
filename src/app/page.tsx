@@ -72,7 +72,7 @@ export default function Home() {
                         href="https://liumingmou.github.io/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="underline underline-offset-2 hover:text-[var(--accent)] transition-colors"
+                        className="font-medium text-[var(--accent)] underline underline-offset-2 hover:opacity-80 transition-opacity"
                       >
                         Mingmou Liu
                       </a>
