@@ -11,6 +11,16 @@ export type Note = {
 
 export const notes: Note[] = [
   {
+    slug: "meta-complexity",
+    title: "Meta-Complexity Notes",
+    desc: "Handwritten notes on MCSP, Kolmogorov complexity, learning theory, and open problems in meta-complexity.",
+    tags: ["Meta-Complexity", "Complexity Theory"],
+    meta: "PDF · 13 pages",
+    date: "2026",
+    pdf: "/notes/meta-complexity-notes.pdf",
+    status: "complete",
+  },
+  {
     slug: "sketching-algorithms",
     title: "Sketching Algorithms Notes",
     desc: "Notes based on the Sketching Algorithms lecture notes by Jelani Nelson, Fall 2020.",
