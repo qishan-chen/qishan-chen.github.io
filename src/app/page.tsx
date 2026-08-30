@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
 import { notes } from "@/data/notes";
+import { news } from "@/data/news";
 
 const publications = [
   {
@@ -107,10 +108,25 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-2">News</h2>
             <div className="w-12 h-1 bg-[var(--accent)] rounded mb-8" />
           </FadeIn>
-          <FadeIn delay={0.1}>
+          <div className="grid md:grid-cols-2 gap-4">
+            {news.slice(0, 2).map((item, i) => (
+              <FadeIn key={`${item.date}-${item.title}`} delay={0.1 + 0.1 * i}>
+                <Link
+                  href="/news"
+                  className="flex h-full flex-col rounded-xl border border-[var(--border)] bg-[var(--card)] p-5 shadow-sm transition-colors hover:border-[var(--accent)]"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="font-semibold">{item.title}</h3>
+                    <span className="shrink-0 text-xs font-medium text-[var(--accent)]">{item.date}</span>
+                  </div>
+                </Link>
+              </FadeIn>
+            ))}
+          </div>
+          <FadeIn delay={0.3}>
             <Link
               href="/news"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] hover:gap-2.5 transition-all"
+              className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] hover:gap-2.5 transition-all"
             >
               View all news
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
