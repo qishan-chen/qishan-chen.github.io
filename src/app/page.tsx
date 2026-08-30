@@ -27,10 +27,7 @@ export default function Home() {
           <FadeIn delay={0.1}>
             <div>
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-3">Qishan Chen</h1>
-              <p className="text-xl text-[var(--text-secondary)] mb-2">Sun Yat-Sen University · Sophomore</p>
-              <p className="text-lg text-[var(--text-secondary)] max-w-lg leading-relaxed">
-                An undergraduate passionate about Mathematics and Theoretical Computer Science, focusing on Graph Theory, Algorithm Design and Complexity Analysis.
-              </p>
+              <p className="text-xl text-[var(--text-secondary)] mb-2">Sun Yat-Sen University · Junior</p>
               <div className="flex gap-4 mt-6">
                 <a href="#contact" className="px-5 py-2.5 bg-[var(--accent)] text-white rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
                   Contact Me
