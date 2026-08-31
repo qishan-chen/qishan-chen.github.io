@@ -18,7 +18,7 @@ export const notes: Note[] = [
     meta: "PDF · 13 pages",
     date: "2026",
     pdf: "/notes/meta-complexity-notes.pdf?v=20260831-small-labels",
-    status: "complete",
+    status: "draft",
   },
   {
     slug: "sketching-algorithms",
