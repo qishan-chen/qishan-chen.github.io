@@ -57,6 +57,17 @@ export default function Home() {
                   <div className="p-5 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
                     <p className="font-medium">Sun Yat-Sen University</p>
                     <p className="text-sm text-[var(--text-secondary)] mt-1">B.S. in Mathematics</p>
+                    <p className="text-sm text-[var(--text-secondary)] mt-1">
+                      Supervisor: {" "}
+                      <a
+                        href="https://hupple.github.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[var(--link-muted)] underline underline-offset-2 hover:text-[var(--accent)] transition-colors"
+                      >
+                        Ping Hu
+                      </a>
+                    </p>
                     <p className="text-sm text-[var(--text-secondary)] mt-1">2024 - 2028 (Expected)</p>
                   </div>
                 </div>
