@@ -23,7 +23,18 @@ export default function NewsPage() {
             <FadeIn key={`${item.date}-${item.title}`} delay={0.05 * i}>
               <article className="leading-relaxed">
                 <time className="font-medium text-[var(--text)]">{item.date}:</time>{" "}
-                <span className="text-[var(--text-secondary)]">{item.title}</span>
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--text-secondary)] hover:text-[var(--accent)] hover:underline"
+                  >
+                    {item.title}
+                  </a>
+                ) : (
+                  <span className="text-[var(--text-secondary)]">{item.title}</span>
+                )}
               </article>
             </FadeIn>
           ))}

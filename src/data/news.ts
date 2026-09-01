@@ -6,6 +6,7 @@ export const news = [
   {
     date: "2026.7",
     title: "Attended the Fifth Summer School on the Beauty of Computational Theory at Nanjing University.",
+    link: "https://tcs.nju.edu.cn/wiki/index.php?title=%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA%E4%B9%8B%E7%BE%8E_(Summer_2026)",
   },
   {
     date: "2026.7",
